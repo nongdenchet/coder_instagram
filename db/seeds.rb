@@ -8,9 +8,16 @@
 
 require 'ffaker'
 
+images = [
+    "https://i.ytimg.com/vi/u1w7zqbBiXM/maxresdefault.jpg",
+    "http://www.bonappetit.com/wp-content/uploads/2013/08/grilled-ratatouille-salad-646.jpeg",
+    "http://app.cookingmatters.org/sites/default/files/sos-img/Ratatouille.jpg",
+    "http://www.seriouseats.com/recipes/assets_c/2013/09/20130922-266596-sunday-brunch-ratatouille-fried-eggs-thumb-625xauto-352893.jpg"
+]
+
 100.times do |index|
   Photo.create(username: "username-#{index}", caption: FFaker::Name.name,
-               url: "http://lorempixel.com/400/400/sports/#{rand(10) + 1}", likes_count: index)
+               url: images[rand(4)], likes_count: index)
 end
 
 Photo.all.each do |photo|
