@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  username: Lan Lung Linh
+  caption: Piano
+  likes_count: 100
+  url: https://lorempixel.com/400/400
+
+two:
+  username: nongdenchet
+  caption: Lorem Ispum
+  likes_count: 200
+  url: https://lorempixel.com/400/400
