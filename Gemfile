@@ -27,6 +27,8 @@ gem 'ffaker'
 # Material design
 gem 'kaminari'
 gem 'materialize-sass'
+# Instagram
+gem 'instagram'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
