@@ -1,0 +1,8 @@
+<h3>Instagram</h3>
+<div class="container">
+  <% @photos.each do |photo| %>
+      <p>Username: <%= photo.username %></p>
+      <p>Caption: <%= photo.caption %></p>
+      <%= image_tag(photo.url) %>
+  <% end %>
+</div>
